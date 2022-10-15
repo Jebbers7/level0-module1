@@ -11,19 +11,25 @@
 """
 
 from tkinter import *
-import tkinter as tk
+import tkinter
+if __name__ == '__main__':
 
-root = tk.Tk()
+    root = Tk()
 
-canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
-canvas.grid()
+    canvas = Canvas(root, width=200, height=200, bg="#FF00FF");
+    canvas.grid()
 
-'''
-Text Rendering Example:
-                    x    y                                                       
-canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
-'''
-# Put your code below
+    '''
+    Text Rendering Example:
+                        x    y                                                       
+    canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
+    '''
+    # Put your code below
+    text = 'banana'
+    for i in range(4):
+        canvas.create_text(100, 100 - (25 * i), text=text, font=('Arial', 16))
+        if i == 0:
+            text = 'ice cream'
+        i = i + 1
 
-
-root.mainloop()
+    root.mainloop()

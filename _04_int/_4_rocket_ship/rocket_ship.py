@@ -24,7 +24,7 @@ def mouse_pressed(event):
     
     # 1. Add details to your rocket to make it look better. You can look at
     #    rocket.png for inspiration.
-    
+    canvas.create_arc(x - 150, y + 150, x + 50, y + 150,  fill='red', width=10)
     # 2. Modify the locations of the shapes above so the rocket will be drawn
     #    where the mouse is clicked
     
